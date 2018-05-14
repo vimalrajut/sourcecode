@@ -8,7 +8,7 @@ pipeline {
     }
     stage('deploy') {
       steps {
-        build 'githook/master'
+        build 'githook-test/master'
       }
     }
   }
