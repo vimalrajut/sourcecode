@@ -3,12 +3,13 @@ pipeline {
   stages {
     stage('build') {
       steps {
-        echo 'hello'
+        echo 'hello - World!'
+	sh "mvn install"
       }
     }
     stage('deploy') {
       steps {
-        build 'githook-test'
+   	echo 'build success'
       }
     }
   }
